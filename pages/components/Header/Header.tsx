@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Header() {
   return (
     <>
@@ -12,13 +14,9 @@ function Header() {
             <div className="flex items-center">
               <ul className="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:underline"
-                    aria-current="page"
-                  >
-                    Accueil
-                  </a>
+                  <p className="text-gray-900 dark:text-white hover:underline">
+                    <Link href="/"> Accueil </Link>
+                  </p>
                 </li>
 
                 <li>
@@ -31,12 +29,9 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-900 dark:text-white hover:underline"
-                  >
-                    Notre histoire
-                  </a>
+                  <p className="text-gray-900 dark:text-white hover:underline">
+                    <Link href="/posts/first-post"> Notre histoire </Link>
+                  </p>
                 </li>
                 <li>
                   <a
